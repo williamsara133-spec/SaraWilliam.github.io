@@ -2,6 +2,22 @@
     padding: 0;
     margin: 0;
 }
+@media (max-width: 768px) {
+  .section {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; 
+  }
+
+  .section img {
+    width: 40%;
+  }
+
+  .section .text {
+    width: 60%;
+    font-size: 14px;
+  }
+}
 .oo{
     background-image: url(OIP.webp);
     background-position:left;
@@ -83,7 +99,7 @@ thead,tbody {
     padding: 2px;
     background-color: beige;
 }
-.foorm{
+.form{
     text-align: left;
     justify-content: center;
     align-items: center;
@@ -105,24 +121,63 @@ thead,tbody {
     text-align: center;
     align-items: center;
 }
-.form{
-     text-align: left;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(190, 169, 238);
-    padding-bottom:170px;
-    padding-top: 92px;
-    padding-right: 140px;
-    padding-left:50px ;
-    height: 250px;
-    width: 110px;
-    border: solid 3px rgb(196, 214, 115);
-    margin: auto;
-    border-radius: 15px;
-}
 input{
     border-radius: 7px;
     height: 40px;
     width: 180px;
     background-color: antiquewhite;
+}
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f5f7fa;
+}
+
+.contact h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background: white;
+  padding: 25px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card h3 {
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.contact-card a {
+  text-decoration: none;
+  background: #6c63ff;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.contact-card a:hover {
+  background: #4b47c4;
 }
