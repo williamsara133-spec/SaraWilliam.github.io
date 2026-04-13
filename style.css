@@ -88,8 +88,8 @@ thead,tbody {
     justify-content: center;
     align-items: center;
     background-color: rgb(169, 222, 238);
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding-bottom: 170px;
+    padding-top: 92px;
     padding-right: 140px;
     padding-left:50px ;
     height: 250px;
@@ -110,8 +110,8 @@ thead,tbody {
     justify-content: center;
     align-items: center;
     background-color: rgb(190, 169, 238);
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding-bottom:170px;
+    padding-top: 92px;
     padding-right: 140px;
     padding-left:50px ;
     height: 250px;
@@ -119,4 +119,10 @@ thead,tbody {
     border: solid 3px rgb(196, 214, 115);
     margin: auto;
     border-radius: 15px;
+}
+input{
+    border-radius: 7px;
+    height: 40px;
+    width: 180px;
+    background-color: antiquewhite;
 }
