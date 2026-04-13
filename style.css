@@ -3,20 +3,33 @@
     margin: 0;
 }
 @media (max-width: 768px) {
-  .section {
-    flex-direction: row;
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section .text,
+    .section .image {
+        width: 100%;
+    }
+
+    .section .image img {
+        max-width: 250px;
+    }
+}
+You sent
+.section {
+    display: flex;
     align-items: center;
-    gap: 10px; 
-  }
-
-  .section img {
-    width: 40%;
-  }
-
-  .section .text {
-    width: 60%;
-    font-size: 14px;
-  }
+    justify-content: space-between;
+    padding: 20px;
+}
+.section .text {
+    width: 50%;
+}
+.section .image img {
+    width: 100%;
+    max-width: 300px;
 }
 .oo{
     background-image: url(OIP.webp);
