@@ -83,17 +83,26 @@ thead,tbody {
     padding: 2px;
     background-color: beige;
 }
-.form{
-    text-align: center;
-    align-items: center;
-    padding: 150px;
-    border-width: 100px;
-    
-}
-.t{
-    text-align: center;
-    align-items: center;
+.foorm{
+    text-align: left;
     justify-content: center;
-    height: 100vh;
-    padding: 150px;
+    align-items: center;
+    background-color: rgb(169, 222, 238);
+    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-right: 140px;
+    padding-left:50px ;
+    height: 250px;
+    width: 110px;
+    border: solid 3px rgb(214, 115, 115);
+    margin: auto;
+    border-radius: 15px;
 }
+.label{
+    color: rgb(88, 88, 223);
+    font-size: medium;
+    font-style:unset;
+    text-align: center;
+    align-items: center;
+}
+
