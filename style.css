@@ -2,35 +2,18 @@
     padding: 0;
     margin: 0;
 }
-@media (max-width: 768px) {
-    .section {
-        flex-direction: column;
-        text-align: center;
-    }
+@media screen and (max-width:768px){
+   .oo background-image{
+              width: 48px ;
+   }
+}
+@media screen and (max-width:400px){
+   .oo background-image{
+              width: 94px ;
+   }
+}
+    
 
-    .section .text,
-    .section .image {
-        width: 100%;
-    }
-
-    .section .image img {
-        max-width: 250px;
-    }
-}
-You sent
-.section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-.section .text {
-    width: 50%;
-}
-.section .image img {
-    width: 100%;
-    max-width: 300px;
-}
 .oo{
     background-image: url(OIP.webp);
     background-position:left;
