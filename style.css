@@ -1,20 +1,16 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body.oo {
     margin: 0;
     padding: 0;
-    background-image: url("OIP.webp");
-    background-repeat: no-repeat;
-    
- 
-    background-position:  20px center; 
-    background-size: 280px auto; 
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 nav{
@@ -23,7 +19,8 @@ nav{
     flex-direction: row;
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding:  15px 10px;
+    width: 100%;
     
 
 }
@@ -96,12 +93,9 @@ thead,tbody {
     justify-content: center;
     align-items: center;
     background-color: rgb(169, 222, 238);
-    padding-bottom: 170px;
-    padding-top: 92px;
-    padding-right: 140px;
-    padding-left:50px ;
-    height: 250px;
-    width: 110px;
+    padding: 25px;
+    height: 430px;
+    width: 300px;
     border: solid 3px rgb(214, 115, 115);
     margin: auto;
     border-radius: 15px;
@@ -173,31 +167,51 @@ input{
 .contact-card a:hover {
   background: #4b47c4;
 }
-
-@media screen and (max-width: 768px) {
-    body.oo {
-        background-size: 220px auto;
-        padding-top: 240px;
-    }
-    .qq {
-        width: 220px;
-        font-size: 22px;
-    }
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
 }
 
-@media screen and (max-width: 400px) {
-    body.oo {
-        background-size: 180px auto;
-        padding-top: 200px;
+.hero-img {
+    width: 280px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; 
+        text-align: center;
     }
-    .qq {
+
+    .hero-img {
         width: 200px;
+    }
+     nav{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+}
+@media (max-width: 400px) {
+    .hero-img {
+        width: 150px;
+    }
+
+    .xx {
+        padding: 20px;
+        font-size: 16px;
+    }
+     .qq {
+        width: 180px;
         font-size: 18px;
     }
-    .xx {
-        padding: 40px 10px;
-    }
-}
-
-
-
+     nav{
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px;
+     }
