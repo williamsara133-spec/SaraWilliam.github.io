@@ -2,26 +2,21 @@
     padding: 0;
     margin: 0;
 }
-@media screen and (max-width:768px){
-   .oo background-image{
-              width: 48px ;
-   }
-}
-@media screen and (max-width:400px){
-   .oo background-image{
-              width: 94px ;
-   }
-}
-    
 
-.oo{
-    background-image: url(OIP.webp);
-    background-position:left;
-    height: 600px;
+body.oo {
+    margin: 0;
+    padding: 0;
+    background-image: url("OIP.webp");
     background-repeat: no-repeat;
     
-    
+ 
+    background-position:  20px center; 
+    background-size: 280px auto; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
 nav{
     background-color: rgb(79, 219, 219);
     text-align:center;
@@ -47,6 +42,9 @@ nav .link:visited{
     color: rgb(255, 224, 47);
     text-align: center;
     padding: 10px;
+    width: 250px;
+    margin: 0 auto;
+    display: block;
 
 }
 .yy{
@@ -78,8 +76,6 @@ footer{
 }
 table{
     text-align:center;
-    width:500px ;
-    height: 500px;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -88,11 +84,11 @@ table{
 }
 td , th{
     color: rgb(240, 57, 158);
-    border: 2px solid rgb(230, 227, 220);
+    border: 8px solid rgb(230, 227, 220);
     background-color: rgba(203, 211, 211, 0.664);
 } 
 thead,tbody {
-    padding: 2px;
+    padding: 5px;
     background-color: beige;
 }
 .form{
@@ -177,3 +173,31 @@ input{
 .contact-card a:hover {
   background: #4b47c4;
 }
+
+@media screen and (max-width: 768px) {
+    body.oo {
+        background-size: 220px auto;
+        padding-top: 240px;
+    }
+    .qq {
+        width: 220px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body.oo {
+        background-size: 180px auto;
+        padding-top: 200px;
+    }
+    .qq {
+        width: 200px;
+        font-size: 18px;
+    }
+    .xx {
+        padding: 40px 10px;
+    }
+}
+
+
+
